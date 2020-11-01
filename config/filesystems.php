@@ -55,6 +55,20 @@ return [
             'visibility' => 'public',
         ],
 
+        'carpeta_imagen' => [
+            'driver' => 'local',
+            'root' => storage_path('app/carpeta_imagen'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+
+        'carpeta_videos' => [
+            'driver' => 'local',
+            'root' => storage_path('app/carpeta_videos'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+        ],
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
